@@ -6,9 +6,6 @@ html, body {
 body {
   background: linear-gradient(to right, #ffecd2, #fcb69f);
 }
-.main-card{
-  margin-top: -100px;
-}
 .colorful-bg {
   position: fixed;
   top: 0;
@@ -63,4 +60,6 @@ body {
     opacity: 1;
   }
 }
+
+
 
