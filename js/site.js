@@ -30,8 +30,7 @@ function cekilisYap() {
 
     let interval;
     let sayac = 0;
-    const maxSayi = 30; // kaç kez hızlı dönecek (örneğin 3 saniye = 30 kez)
-
+    const maxSayi = 30;
     interval = setInterval(() => {
         const rastgele = katilimcilar[Math.floor(Math.random() * katilimcilar.length)];
         kazananLabeli.textContent = "🎰 " + rastgele;
@@ -44,7 +43,6 @@ function cekilisYap() {
             kazananLabeli.style.color = "green";
             konfetiPatlat();
         }
-    }, 100); // 100 ms = 0.1 saniye
+    }, 50); 
 }
-
 cekilisButonu.addEventListener('click', cekilisYap);

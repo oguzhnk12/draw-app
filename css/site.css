@@ -3,12 +3,12 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
 body {
   background: linear-gradient(to right, #ffecd2, #fcb69f);
 }
-
-
+.main-card{
+  margin-top: -100px;
+}
 .colorful-bg {
   position: fixed;
   top: 0;
@@ -18,13 +18,10 @@ body {
   background: linear-gradient(to right, #ffecd2, #fcb69f);
   z-index: -1;
 }
-
-
 .colorful-card {
   background: linear-gradient(135deg, #667eea, #764ba2);
   border-radius: 2rem;
 }
-
 .colorful-textarea {
   background-color: rgba(255, 255, 255, 0.9);
   border: none;
@@ -39,31 +36,23 @@ body {
   border-top-right-radius: 1rem;
 }
 .colorful-header {
-  background: linear-gradient(to right, #667eea, #764ba2);
-  z-index: 1030;
-  transition: background 0.5s ease-in-out;
-}
-
-/* Hover ile renk geçişi */
-.colorful-header:hover {
   background: linear-gradient(to right, #ff6a00, #ee0979);
+  z-index: 1030;
 }
-
-/* İkon animasyonu (dönme) */
+.colorful-header:hover {
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
 .animated-icon {
+  margin-left: 15px;
   animation: spin 4s linear infinite;
 }
-
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-/* Başlık metni yavaşça ortaya çıksın */
 .animated-text {
   animation: fadeInUp 1.2s ease-out;
 }
-
 @keyframes fadeInUp {
   0% {
     transform: translateY(20px);
